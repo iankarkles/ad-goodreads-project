@@ -130,3 +130,7 @@ dmypy.json
 
 #Way to big csv files
 ratings_with_date.csv
+ratings_with_date_fixed.csv
+ratings.csv
+ratings.csv
+ratings.csv
