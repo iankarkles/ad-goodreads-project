@@ -1,0 +1,18 @@
+Rankings
+1 - Top 10 tags que mais aparecem no To_Read
+2 - O livro com maior rating por década/ século / 
+3 - Evolução da atribuição das tags ao longo dos últimos 10/20 anos
+4 - Quais os users mais ativos da plataforma (maior número de rankings and to_read)
+5 - Rating médio por idade/sexo dos utilizadores
+6 - Top 3 de Tags que têm o melhor rating atribuido
+7 - Top 5 dos Livros adicionados á lista To_Read com melhor average rating
+8 - Comparar a distribuição dos diversos ratings com o número de vezes que esses livros são adicionados à To_Read list 
+9 - Top 3 dos melhores livros portugueses (melhor average rating) na última década
+10 - Definir os dois livros com o maior diferencial de rating atribuido ( maior quantidade de rating 1 e maior quantidade de rating 5)
+11 - O livro com maior atribuição de ratings, tags e to_reads - O livro, a tag e o autor mais populares
+
+Autor
+1 - Autor com melhor rating atribuido e simultaneamente com maior número de ratings
+2 - Top 5 de autores com maior evolução (considerando o average rating) na última década
+3 - Top 10 de melhores autores de sempre (average rating)
+4 - 
