@@ -3,14 +3,13 @@
 CREATE TABLE book(
 book_id INTEGER PRIMARY KEY UNIQUE, 
 goodreads_book_id INTEGER UNIQUE,
-best_book_id INTEGER UNIQUE,
-work_id INTEGER UNIQUE,
 books_count INTEGER,
 isbn NUMERIC(15,2),
 isbn13 NUMERIC(15,2),
 original_title VARCHAR(255),
 title VARCHAR(255),
-language_code VARCHAR(255));
+language VARCHAR(255),
+publication_year FLOAT);
 
 --create tag table
 
