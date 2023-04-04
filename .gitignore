@@ -134,3 +134,4 @@ ratings_with_date_fixed.csv
 ratings.csv
 ratings_merged.csv
 ratings.sql
+.DS_Store
