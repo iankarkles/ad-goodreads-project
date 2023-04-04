@@ -8,7 +8,7 @@ isbn NUMERIC(15,2),
 isbn13 NUMERIC(15,2),
 original_title VARCHAR(255),
 title VARCHAR(255),
-language VARCHAR(255),
+book_language VARCHAR(255),
 publication_year FLOAT);
 
 --create tag table
