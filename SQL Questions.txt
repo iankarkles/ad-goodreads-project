@@ -1,6 +1,6 @@
 Rankings
 1 - Top 10 tags que mais aparecem no To_Read
-2 - O livro com maior rating por década/ século / 
+2 - O livro com maior rating médio por ano 
 3 - Evolução da atribuição das tags ao longo dos últimos 10/20 anos
 4 - Quais os users mais ativos da plataforma (maior número de rankings and to_read)
 5 - Rating médio por idade/sexo dos utilizadores
