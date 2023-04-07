@@ -115,6 +115,17 @@ ORDER BY AVG(S.avg_rating) DESC
 LIMIT 3
 -----------
 
+
+-- Q7 - Top 5 dos Livros adicionados á lista To_Read com melhor average rating
+SELECT book.title, stat.avg_rating, COUNT(toread.book_id)
+FROM books book
+JOIN statistics_rating stat ON stat.book_id = book.book_id
+JOIN to_read toread ON toread.book_id = book.book_id
+GROUP BY book.title,stat.avg_rating
+ORDER BY stat.avg_rating DESC
+LIMIT 10
+
+
 -- Q9 - Top 3 dos melhores livros portugueses (melhor average rating) na última década
 SELECT DISTINCT original_title, avg_rating, book_language
 FROM (
@@ -126,6 +137,44 @@ FROM (
 ) AS subquery
 ORDER BY avg_rating DESC
 LIMIT 3
+-----------
+
+
+-- Q10 - Definir os dois livros com o maior diferencial de rating atribuido ( maior quantidade de rating 1 e maior quantidade de rating 5)
+SELECT B.title, S.rating_1
+FROM books B
+JOIN statistics_rating S ON B.book_id = S.book_id
+GROUP BY B.title, S.rating_1
+ORDER BY S.rating_1 DESC
+LIMIT 2
+
+SELECT B.title, S.rating_5
+FROM books B
+JOIN statistics_rating S ON B.book_id = S.book_id
+GROUP BY B.title, S.rating_5
+ORDER BY S.rating_5 DESC
+LIMIT 2
 
 
 
+
+
+-- Q3 - Top 5 de autores com maior evolução (considerando o average rating) na última década
+-- This query needs input -  year
+SELECT A.name, AVG(S.avg_rating)
+FROM authors A
+JOIN statistics_rating S ON A.author_id = S.author_id
+WHERE S.year = 2010
+GROUP BY A.name
+ORDER BY AVG(S.avg_rating) DESC
+LIMIT 5
+-----------
+
+
+-- Q3 - Top 10 de melhores autores de sempre (average rating)
+SELECT A.name, AVG(S.avg_rating)
+FROM authors A
+JOIN statistics_rating S ON A.author_id = S.author_id
+GROUP BY A.name
+ORDER BY AVG(S.avg_rating) DESC
+LIMIT 10
